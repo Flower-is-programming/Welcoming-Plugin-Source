@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+group = 'net.flowertjeee'
+version = '1.0'
+description = 'A basic Minecraft plugin that sends welcome messages'
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(21))
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'papermc'
+        url = 'https://repo.papermc.io/repository/maven-public/'
+    }
+}
+
+dependencies {
+    compileOnly 'io.papermc.paper:paper-api:1.21.5-R0.1-SNAPSHOT'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    manifest {
+        attributes(
+            'Main-Class': 'net.flowertjeee.Greeting'
+        )
+    }
+}

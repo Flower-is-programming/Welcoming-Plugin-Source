@@ -1,0 +1,5 @@
+name: GreetingPlugin
+version: 1.0
+main: net.flowertjeee.Greeting
+api-version: 1.21
+description: "Sends welcome messages."
