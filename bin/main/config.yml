@@ -1,0 +1,8 @@
+# Flowers welcome message config
+messages:
+  first_join: "&aWelcome to the server for the first time!"  # Green text
+  returning_player: "&4Welcome back to the server!"  # Red text I believe
+
+# Toggling
+plugin_settings:
+  enable_welcome_message: true
